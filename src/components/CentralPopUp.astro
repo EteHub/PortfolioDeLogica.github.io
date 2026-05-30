@@ -39,6 +39,24 @@
     color: #ab2ef3;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+      padding: 0 20px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -100px);
+      }
+    }
+  }
 </style>
 <style>
   @keyframes fadeOut {

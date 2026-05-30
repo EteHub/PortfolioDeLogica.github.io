@@ -52,11 +52,33 @@
   }
 
   .logo h1 {
-    font-size: 2rem; /* Tamaño más equilibrado para un NavBar */
-    margin: 0; /* Elimina el margen por defecto que rompe el centrado */
+    font-size: 2rem;
+    margin: 0;
     color: #ab2ef3;
     text-shadow: 0 0 5px rgb(0, 0, 0);
     transition: all 0.3s ease;
     font-weight: 100;
+  }
+
+  @media (max-width: 768px) {
+    .NavBar {
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px 10px;
+    }
+
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .nav-links li {
+      margin: 5px;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+    }
   }
 </style>
