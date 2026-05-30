@@ -1,0 +1,179 @@
+---
+import NavBar from "../components/NavBar.astro";
+import CentralPopUp from "../components/CentralPopUp.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quienes Somos - Portfolio Lógica</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <NavBar />
+    <div class="group-photo">
+      <!-- Aquí podrías poner una imagen o contenido -->
+      <p>Espacio para foto grupal</p>
+    </div>
+
+    <section class="info-section">
+      <h1>Quienes Somos</h1>
+      <p>
+        Acá podras encontrar informacion sobre nuestro grupo de trabajo, quienes
+        somos, que hacemos, etc
+      </p>
+    </section>
+    <section class="members-cards">
+      <div class="card">
+        <div class="member-photo">Foto</div>
+        Miembro
+      </div>
+      <div class="card">
+        <div class="member-photo">Foto</div>
+        Miembro
+      </div>
+      <div class="card">
+        <div class="member-photo">Foto</div>
+        Miembro
+      </div>
+      <div class="card">
+        <div class="member-photo">Foto</div>
+        Miembro
+      </div>
+      <div class="card">
+        <div class="member-photo">Foto</div>
+        Miembro
+      </div>
+      <div class="card">
+        <div class="member-photo">Foto</div>
+        Miembro
+      </div>
+    </section>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        background-color: #0b0b0b;
+        background-image: url("/w5.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        color: white;
+      }
+      .member-photo {
+        width: 100%;
+        height: 13rem;
+        background: rgba(0, 0, 0, 0.521);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 32px rgba(255, 255, 255, 0.137);
+        margin-bottom: 12px;
+      }
+      .group-photo {
+        animation: fadeInUp 1s ease-out forwards;
+        transition: all 0.3s ease;
+        width: 80%;
+        max-width: 800px;
+        height: 300px;
+        margin: 30px auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      }
+
+      .info-section {
+        text-align: center;
+        max-width: 800px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+        margin: 20px auto;
+      }
+      .members-cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        width: 200px;
+        height: 15rem;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(255, 255, 255, 0.137);
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.164);
+          box-shadow: 0 0 13px #ab2ef37e;
+          transform: translateY(-5px);
+          transition: all 0.3s ease;
+          color: #ab2ef3;
+          text-shadow: 0 0 5px #000000;
+          font-weight: 500;
+        }
+      }
+      h1 {
+        animation: fadeInUp 1s ease-out forwards;
+        color: #ab2ef3;
+        font-weight: 300;
+        font-size: 2.5rem;
+      }
+      p {
+        animation: fadeInUp 1s ease-out forwards;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 768px) {
+        .group-photo {
+          width: 95%;
+          height: 200px;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+        .info-section {
+          width: 90%;
+        }
+        .member-photo {
+          height: 9rem;
+        }
+        .card {
+          width: 8rem;
+          height: 12rem;
+        }
+        .members-cards {
+          gap: 15px;
+        }
+      }
+    </style>
+  </body>
+</html>
