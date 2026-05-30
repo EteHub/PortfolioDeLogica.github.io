@@ -12,62 +12,32 @@ import CentralPopUp from "../components/CentralPopUp.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Lógica: El Corazón de la Computación</title>
   </head>
-  <h1 class="bigtext">
-    La logica ha sido un pilar fundamental en la vida real tanto para la
-    computación y aca en nuestro portfolio esto se puede evidenciar en cada uno
-    de nuestros proyectos, ya que cada uno de ellos se basa en la lógica para su
-    desarrollo y funcionamiento, desde la planificación hasta la ejecución,
-    demostrando así la importancia de la lógica en el mundo de la computación y
-    en nuestro trabajo diario.
-  </h1>
-
   <body>
     <NavBar />
     <CentralPopUp />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
-      .bigtext {
-        width: 90%;
-        position: fixed;
-        top: 80%;
-        left: 50%;
-        font-size: 1.5rem;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #d3d3d3;
-        font-family: "Montserrat";
-        animation: fadeInUp 1s ease-out forwards;
-        font-weight: 400;
-        margin: 0 0 0 0;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.034);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        box-shadow: 0 4px 30px #000000ad;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-image: url("/background.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        min-height: 100vh;
-      }
-      @media (max-width: 768px) {
-        .bigtext {
-          font-size: 1.2rem;
-          width: 90%;
-          padding: 0 10px;
-          top: 76%;
-        }
-      }
-    </style>
   </body>
-
-
 </html>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("/w5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  @media (max-width: 768px) {
+    .bigtext {
+      font-size: 1.2rem;
+      width: 90%;
+      padding: 0 10px;
+      top: 76%;
+    }
+  }
+</style>
