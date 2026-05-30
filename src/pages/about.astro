@@ -3,13 +3,7 @@ import NavBar from "../components/NavBar.astro";
 import CentralPopUp from "../components/CentralPopUp.astro";
 ---
 
-<script>
-  let target1 = document.getElementById("card1");
-  target1?.addEventListener("click", () => {
-    let modal1 = document.querySelector(".modal1");
-    modal1?.classList.remove("hidden");
-  });
-</script>
+<script></script>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,33 +29,42 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       </p>
     </section>
     <section class="members-cards">
-      <div id="card1" class="card" onclick="">
+      <div data-member="1" class="card" onclick="">
         <div class="member-photo">Foto</div>
         Miembro
       </div>
-      <div id="card1" class="card">
+      <div data-member="2" class="card">
         <div class="member-photo">Foto</div>
         Miembro
       </div>
-      <div id="card1" class="card">
+      <div data-member="3" class="card">
         <div class="member-photo">Foto</div>
         Miembro
       </div>
-      <div id="card1" class="card">
+      <div data-member="4" id="card1" class="card">
         <div class="member-photo">Foto</div>
         Miembro
       </div>
-      <div id="card1" class="card">
+      <div data-member="5" class="card">
         <div class="member-photo">Foto</div>
         Miembro
       </div>
-      <div id="card1" class="card">
+      <div data-member="6" class="card">
         <div class="member-photo">Foto</div>
         Miembro
       </div>
-      <div class="modal1 hidden">
-        <p>HOLA</p>
+      <!-- <div class="modal1 hidden" id="1">
+        <button class="cls-btn-mdl">X</button>
+        <div class="member-photo2">Foto</div>
+        <h1>Andrés Fernandez</h1>
+        <p>presentacion del miembro / descripcion</p>
       </div>
+      <div class="modal1 hidden" id="2">
+        <button class="cls-btn-mdl">X</button>
+        <div class="member-photo2">Foto</div>
+        <h1>Rosa Ojeda</h1>
+        <p>presentacion del miembro / descripcion</p>
+      </div>-->
     </section>
 
     <style>
@@ -82,6 +85,23 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       .hidden {
         display: none;
       }
+      .v2 {
+        width: 50%;
+      }
+      .cls-btn-mdl {
+        background: transparent;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #b629a3;
+          cursor: pointer;
+        }
+      }
       .modal1 {
         position: fixed;
         top: 50%;
@@ -93,7 +113,7 @@ import CentralPopUp from "../components/CentralPopUp.astro";
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
         z-index: 1000;
         backdrop-filter: blur(5px);
-        width: 50%;
+        width: 40%;
         height: 75%;
         text-align: center;
       }
@@ -108,6 +128,18 @@ import CentralPopUp from "../components/CentralPopUp.astro";
         align-items: center;
         box-shadow: 0 8px 32px rgba(255, 255, 255, 0.137);
         margin-bottom: 12px;
+      }
+      .member-photo2 {
+        width: 40%;
+        height: 10rem;
+        background: rgba(0, 0, 0, 0.521);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0px 5px rgba(255, 254, 254, 0.514);
+        margin: 0 auto;
       }
       .group-photo {
         animation: fadeInUp 1s ease-out forwards;
@@ -200,6 +232,14 @@ import CentralPopUp from "../components/CentralPopUp.astro";
         }
         .members-cards {
           gap: 15px;
+        }
+        .modal1 {
+          width: 80%;
+          height: 400px;
+        }
+        .member-photo2 {
+          width: 60%;
+          height: 8rem;
         }
       }
     </style>
