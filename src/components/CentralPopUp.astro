@@ -3,13 +3,14 @@
 ---
 
 <div class="content">
-  <h1>Lógica: El Corazón de la Computación</h1>
+  <h1>La Lógica: La base del analisis racional.</h1>
 </div>
 <style>
   .content {
     position: fixed;
-    top: 40%;
+    top: 25%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -80%);
     text-align: center;
     color: #ffffff;
@@ -40,13 +41,17 @@
     text-shadow: 0 2px 4px rgb(0, 0, 0);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     h1 {
-      font-size: 1.9rem;
+      font-size: 2rem;
       padding: 0 20px;
       transform: translate(0%, 35%);
     }
-
+    .content {
+      position: absolute;
+      top: 45%;
+      transform: translate(-50%, -50%);
+    }
     @keyframes fadeInUp {
       from {
         opacity: 0;

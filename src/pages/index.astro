@@ -5,6 +5,13 @@ import CentralPopUp from "../components/CentralPopUp.astro";
 
 <html lang="en">
   <head>
+    <link
+      rel="preload"
+      href="/Fonts/Montserrat-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
     <meta charset="utf-8" />
     <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />-->
     <link rel="icon" href="/logic.png" />
@@ -15,6 +22,18 @@ import CentralPopUp from "../components/CentralPopUp.astro";
   <body>
     <NavBar />
     <CentralPopUp />
+    <h2>Fundamentos y estructura del razonamiento formal.</h2>
+    <div class="h3-container">
+      <h3>
+        BIENVENIDO A ESTE ESPACIO DEDICADO A LA LÓGICA FORMAL. AQUÍ EXPLORAMOS
+        FUNDAMENTOS RACIONALES 1 DEL PENSAMIENTO, DESDE LOS SILOGISMOS CLÁSICOS
+      </h3>
+      <h3>
+        NUESTRO PORTFOLIO MUESTRA LA APLICACIÓN PRÁCTICA Y TEÓRICA DE ESTA
+        DISCIPLINA ESENCIAL. DESDE LA RESOLUCIÓN DE PROBLEMAS HASTA LA
+        CONSTRUCCIÓN DE ARGUMENTOS
+      </h3>
+    </div>
   </body>
 </html>
 <style>
@@ -37,6 +56,58 @@ import CentralPopUp from "../components/CentralPopUp.astro";
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+  }
+  /* h3 ala izquierda debajo del h2 , ajustado para poder añadir uno segundo pero a la derecha con espacio entre ellos pero un width definido */
+  .h3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra el conjunto en la pantalla */
+    gap: 20px; /* Espacio entre ellos */
+    width: 100%;
+  }
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #c4c4c4;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    /* Eliminamos márgenes que rompen el flex */
+    margin: 0;
+    width: 40%; /* Mantiene tu ancho definido */
+    padding: 0 20px;
+  }
+
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .h3-container {
+      flex-direction: column; /* Apila en vertical si la pantalla es pequeña */
+      align-items: center;
+    }
+    h3 {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 785px) {
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 20px;
+    }
+    .h3-container {
+      flex-direction: column; /* Apila en vertical si la pantalla es pequeña */
+      align-items: center;
+    }
+    h3 {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #b853f3;
+    text-shadow: 0 0 10px #000000;
+    text-align: center;
+    margin-top: 20vh;
   }
   @media (max-width: 768px) {
     .bigtext {
