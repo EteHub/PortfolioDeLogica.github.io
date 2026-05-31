@@ -20,7 +20,22 @@ import NavBar from "../components/NavBar.astro";
     <div class="submodule-card">
       <h2>Submodulo 1</h2>
       <p>Descripcion del submodulo 1</p>
-      <div class="works-cointainer"></div>
+      <div class="works-cointainer">
+        <div class="work-card">
+          <h1>Trabajo 1</h1>
+          <div class="work-card-photo-slot"></div>
+          <p>hola</p>
+          <button class="cls-btn-mdl">Ver mas</button>
+        </div>
+        <div class="work-card">
+          <h1>Trabajo 1</h1>
+          <div class="work-card-photo-slot"></div>
+          <p>
+            holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </p>
+          <button class="cls-btn-mdl">Ver mas</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
@@ -49,6 +64,52 @@ import NavBar from "../components/NavBar.astro";
     padding: 20px;
     /*background: rgba(204, 21, 21, 0.5);*/
   }
+  /* boton al a parte inferior de la card siempre*/
+  .cls-btn-mdl {
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(172, 172, 172, 0.404);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    &:hover {
+      background: rgb(160, 43, 140);
+      border: none;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+  }
+  .work-card h1 {
+    color: #ab2ef3;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  .work-card p {
+    word-break: break-word;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+    /* Estilo para el scrollbar opcional para que se vea mejor */
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(171, 46, 243, 0.3);
+      border-radius: 10px;
+    }
+  }
+  .work-card-photo-slot {
+    width: 100%;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.068);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    flex-shrink: 0;
+  }
   h1 {
     animation: fadeInUp 1s ease-out forwards;
     color: #ab2ef3;
@@ -66,8 +127,21 @@ import NavBar from "../components/NavBar.astro";
       opacity: 1;
     }
   }
+  .work-card {
+    background: rgba(255, 255, 255, 0.068);
+    border-radius: 8px;
+    padding: 15px;
+    color: #e0e0e0;
+    font-weight: 300;
+    width: 18rem;
+    height: 400px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
   .submodule-card {
-    background: rgba(255, 255, 255, 0.075);
+    background: rgba(255, 255, 255, 0.068);
     border-radius: 8px;
     padding: 20px;
     margin: 20px auto;

@@ -53,10 +53,13 @@ import CentralPopUp from "../components/CentralPopUp.astro";
         Miembro
       </div>
       <div data-member="6" class="card">
-        <div class="member-photo">Foto</div>
+        <div class="member-photo">
+          <img src="w4.jpg" class="photo" />
+        </div>
         Miembro
       </div>
-      <!-- <div class="modal1 hidden" id="1">
+    </section>
+    <!-- <div class="modal1 hidden" id="1">
         <button class="cls-btn-mdl">X</button>
         <div class="member-photo2">Foto</div>
         <h1>Andrés Fernandez</h1>
@@ -68,184 +71,189 @@ import CentralPopUp from "../components/CentralPopUp.astro";
         <h1>Rosa Ojeda</h1>
         <p>presentacion del miembro / descripcion</p>
       </div>-->
-    </section>
+  </body>
 
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Montserrat", sans-serif;
-        background-color: #0b0b0b;
-        background-image: url("/w5.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        min-height: 100vh;
-        color: white;
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+      background-color: #0b0b0b;
+      background-image: url("/w5.jpg");
+      background-size: cover;
+      background-position: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: white;
+    }
+    .hidden {
+      display: none;
+    }
+    .v2 {
+      width: 50%;
+    }
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    .cls-btn-mdl {
+      background: transparent;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #b629a3;
+        cursor: pointer;
       }
-      .hidden {
-        display: none;
-      }
-      .v2 {
-        width: 50%;
-      }
-      .cls-btn-mdl {
-        background: transparent;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    }
+    .modal1 {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+      width: 40%;
+      height: 75%;
+      text-align: center;
+    }
+    .member-photo {
+      width: 100%;
+      height: 13rem;
+      background: rgba(0, 0, 0, 0.521);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 8px 32px rgba(255, 255, 255, 0.137);
+      margin-bottom: 12px;
+    }
+    .member-photo2 {
+      width: 40%;
+      height: 10rem;
+      background: rgba(0, 0, 0, 0.521);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0px 5px rgba(255, 254, 254, 0.514);
+      margin: 0 auto;
+    }
+    .group-photo {
+      animation: fadeInUp 1s ease-out forwards;
+      transition: all 0.3s ease;
+      width: 80%;
+      max-width: 800px;
+      height: 300px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-section {
+      text-align: center;
+      max-width: 800px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0);
+      border-radius: 15px;
+      margin: 20px auto;
+    }
+    .members-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 70%; /* anterior era 800px */
+      margin: 20px auto;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      height: 15rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(19, 19, 19, 0.66);
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.164);
+        /*box-shadow: 0 0 13px #ab2ef37e; */
+        transform: translateY(-5px);
         transition: all 0.3s ease;
-        &:hover {
-          color: #b629a3;
-          cursor: pointer;
-        }
+        color: #ab2ef3;
+        text-shadow: 0 0 5px #000000;
+        font-weight: 500;
+        cursor: pointer;
       }
-      .modal1 {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-        z-index: 1000;
-        backdrop-filter: blur(5px);
-        width: 40%;
-        height: 75%;
-        text-align: center;
+    }
+    h1 {
+      animation: fadeInUp 1s ease-out forwards;
+      color: #ab2ef3;
+      font-weight: 300;
+      font-size: 3.5rem;
+    }
+    p {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @media (max-width: 768px) {
+      .group-photo {
+        width: 95%;
+        height: 200px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+      .info-section {
+        width: 90%;
       }
       .member-photo {
-        width: 100%;
-        height: 13rem;
-        background: rgba(0, 0, 0, 0.521);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 8px 32px rgba(255, 255, 255, 0.137);
-        margin-bottom: 12px;
-      }
-      .member-photo2 {
-        width: 40%;
-        height: 10rem;
-        background: rgba(0, 0, 0, 0.521);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0px 5px rgba(255, 254, 254, 0.514);
-        margin: 0 auto;
-      }
-      .group-photo {
-        animation: fadeInUp 1s ease-out forwards;
-        transition: all 0.3s ease;
-        width: 80%;
-        max-width: 800px;
-        height: 300px;
-        margin: 30px auto;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-      }
-
-      .info-section {
-        text-align: center;
-        max-width: 800px;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0);
-        border-radius: 15px;
-        margin: 20px auto;
-      }
-      .members-cards {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-        max-width: 70%; /* anterior era 800px */
-        margin: 20px auto;
+        height: 5rem;
+        width: 5.2rem;
       }
       .card {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 20px;
-        width: 200px;
-        height: 15rem;
-        text-align: center;
-        box-shadow: 0 8px 32px rgba(19, 19, 19, 0.66);
-        transition: all 0.3s ease;
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.164);
-          /*box-shadow: 0 0 13px #ab2ef37e; */
-          transform: translateY(-5px);
-          transition: all 0.3s ease;
-          color: #ab2ef3;
-          text-shadow: 0 0 5px #000000;
-          font-weight: 500;
-          cursor: pointer;
-        }
+        width: 5rem;
+        height: 7rem;
       }
-      h1 {
-        animation: fadeInUp 1s ease-out forwards;
-        color: #ab2ef3;
-        font-weight: 300;
-        font-size: 3.5rem;
+      .members-cards {
+        gap: 15px;
       }
-      p {
-        animation: fadeInUp 1s ease-out forwards;
+      .modal1 {
+        width: 80%;
+        height: 400px;
       }
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
+      .member-photo2 {
+        width: 60%;
+        height: 8rem;
       }
-      @media (max-width: 768px) {
-        .group-photo {
-          width: 95%;
-          height: 200px;
-        }
-
-        h1 {
-          font-size: 1.8rem;
-        }
-        .info-section {
-          width: 90%;
-        }
-        .member-photo {
-          height: 5rem;
-          width: 5.2rem;
-        }
-        .card {
-          width: 5rem;
-          height: 7rem;
-        }
-        .members-cards {
-          gap: 15px;
-        }
-        .modal1 {
-          width: 80%;
-          height: 400px;
-        }
-        .member-photo2 {
-          width: 60%;
-          height: 8rem;
-        }
-      }
-    </style>
-  </body>
+    }
+  </style>
 </html>
