@@ -1,0 +1,83 @@
+---
+import Navbar from "../components/NavBar.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preload" href="/w5.jpg" as="image" />
+    <link
+      rel="preload"
+      href="/Fonts/Montserrat-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <Navbar />
+    <h1>Sobre nuestra Vision</h1>
+    <p>
+      Este espacio ha sido estructurado con el propósito de compilar y presentar
+      las investigaciones, análisis prácticos y recursos didácticos
+      desarrollados a lo largo del período académico. A través de un despliegue
+      modular, los usuarios podrán acceder a recursos técnicos detallados
+      informativos que abarcan desde los fundamentos de la lógica hasta las
+      estructuras complejas de la deducción.
+    </p>
+  </body>
+</html>
+<style>
+  @font-face {
+    font-family: "Montserrat";
+    src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 200; /* Normal */
+    font-style: thin;
+    font-display: swap;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("/w5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  p {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #e0e0e0;
+    text-align: center;
+    width: 60%;
+    margin: 20vh auto;
+    animation: fadeInUp 2s ease-out forwards;
+  }
+  h1 {
+    font-weight: 300;
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    /*background: rgba(199, 18, 18, 0.5);*/
+    font-size: 3rem;
+    font-family: "Montserrat";
+    color: #ab2ef3;
+    text-align: center;
+    margin-top: 20vh;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
