@@ -20,6 +20,13 @@ import CentralPopUp from "../components/CentralPopUp.astro";
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+  @font-face {
+    font-family: "MiFuente";
+    src: url("/fonts/mi-fuente.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Importante para que no se vea el texto en blanco mientras carga */
+  }
   html,
   body {
     margin: 0;
