@@ -1,6 +1,7 @@
 ---
 import NavBar from "../components/NavBar.astro";
 import CentralPopUp from "../components/CentralPopUp.astro";
+import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
 ---
 
 <html lang="en">
@@ -23,16 +24,8 @@ import CentralPopUp from "../components/CentralPopUp.astro";
     <NavBar />
     <CentralPopUp />
     <h2>Fundamentos y estructura del razonamiento formal.</h2>
-    <div class="h3-container">
-      <h3>
-        BIENVENIDO A ESTE ESPACIO DEDICADO A LA LÓGICA FORMAL. AQUÍ EXPLORAMOS
-        FUNDAMENTOS RACIONALES 1 DEL PENSAMIENTO, DESDE LOS SILOGISMOS CLÁSICOS
-      </h3>
-      <h3>
-        NUESTRO PORTFOLIO MUESTRA LA APLICACIÓN PRÁCTICA Y TEÓRICA DE ESTA
-        DISCIPLINA ESENCIAL. DESDE LA RESOLUCIÓN DE PROBLEMAS HASTA LA
-        CONSTRUCCIÓN DE ARGUMENTOS
-      </h3>
+    <div class="index-cards-container">
+      <!-- <QuienesSomosCard /> -->
     </div>
   </body>
 </html>
@@ -50,31 +43,23 @@ import CentralPopUp from "../components/CentralPopUp.astro";
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url("/w5.jpg");
+    background-image: url("/wallpaperFinal.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
   }
-  /* h3 ala izquierda debajo del h2 , ajustado para poder añadir uno segundo pero a la derecha con espacio entre ellos pero un width definido */
-  .h3-container {
+  .index-cards-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centra el conjunto en la pantalla */
-    gap: 20px; /* Espacio entre ellos */
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+    /* Permite que las cards se ajusten al tamaño del contenedor */
+    flex-wrap: wrap; /* Permite que las cards se muevan a la siguiente línea si no caben en una sola fila */
   }
-
-  h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #c4c4c4;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
-    /* Eliminamos márgenes que rompen el flex */
-    margin: 0;
-    width: 40%; /* Mantiene tu ancho definido */
-    padding: 0 20px;
-  }
+  /* h3 ala izquierda debajo del h2 , ajustado para poder añadir uno segundo pero a la derecha con espacio entre ellos pero un width definido */
 
   /* Ajuste para pantallas pequeñas */
   @media (max-width: 768px) {
@@ -104,10 +89,11 @@ import CentralPopUp from "../components/CentralPopUp.astro";
   h2 {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
-    color: #b853f3;
-    text-shadow: 0 0 10px #000000;
+    color: #ae3bc5;
+    text-shadow: 10px 10px 10px #000000;
     text-align: center;
     margin-top: 20vh;
+    animation: fadeInUp 2s ease-out forwards;
   }
   @media (max-width: 768px) {
     .bigtext {
