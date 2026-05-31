@@ -4,6 +4,10 @@ import NavBar from "../components/NavBar.astro";
 
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />-->
@@ -18,22 +22,34 @@ import NavBar from "../components/NavBar.astro";
       Acá podras encontrar informacion sobre nuestros trabajos, proyectos, etc
     </p>
     <div class="submodule-card">
-      <h2>Submodulo 1</h2>
-      <p>Descripcion del submodulo 1</p>
+      <h2>modulo 1</h2>
+      <p>una descripcion breve del modulo 1</p>
       <div class="works-cointainer">
         <div class="work-card">
           <h1>Trabajo 1</h1>
           <div class="work-card-photo-slot"></div>
           <p>hola</p>
-          <button class="cls-btn-mdl">Ver mas</button>
+          <button class="cls-btn-mdl"
+            ><span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >Ver mas</button
+          >
         </div>
         <div class="work-card">
           <h1>Trabajo 1</h1>
           <div class="work-card-photo-slot"></div>
           <p>
-            holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            descripcion corta del trabajo, con un maximo de 3 lineas, para que
+            se vea bien en la card, si es mas largo se cortara y se mostrara un
+            scrollbar para ver el resto del texto, pero lo ideal es que no sea
+            tan largo para que se vea bien en la card
           </p>
-          <button class="cls-btn-mdl">Ver mas</button>
+          <button class="cls-btn-mdl">
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver mas
+          </button>
         </div>
       </div>
     </div>
@@ -64,8 +80,17 @@ import NavBar from "../components/NavBar.astro";
     padding: 20px;
     /*background: rgba(204, 21, 21, 0.5);*/
   }
+  .centered-button-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    size: 9.2rem;
+  }
   /* boton al a parte inferior de la card siempre*/
   .cls-btn-mdl {
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
     width: 100%;
     background: transparent;
     color: white;
@@ -74,6 +99,10 @@ import NavBar from "../components/NavBar.astro";
     border-radius: 5px;
     cursor: pointer;
     margin-top: auto;
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 8px;
     &:hover {
       background: rgb(160, 43, 140);
       border: none;
@@ -139,6 +168,10 @@ import NavBar from "../components/NavBar.astro";
     cursor: pointer;
     display: flex;
     flex-direction: column;
+  }
+  .work-card p {
+    font-size: 0.9rem;
+    /* Estilo para el scrollbar opcional para que se vea mejor */
   }
   .submodule-card {
     background: rgba(255, 255, 255, 0.068);
