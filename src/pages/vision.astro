@@ -37,13 +37,6 @@ import Navbar from "../components/NavBar.astro";
   </body>
 </html>
 <style>
-  @font-face {
-    font-family: "Montserrat";
-    src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
-    font-weight: 200; /* Normal */
-    font-style: thin;
-    font-display: swap;
-  }
   html,
   body {
     margin: 0;
@@ -52,6 +45,13 @@ import Navbar from "../components/NavBar.astro";
     background-color: #222121;
     min-height: 100vh;
     color: white;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 200; /* Normal */
+    font-style: thin;
+    font-display: swap;
   }
   p {
     text-shadow: 0 0 20px rgb(0, 0, 0);
@@ -75,7 +75,7 @@ import Navbar from "../components/NavBar.astro";
     color: #ec3b3b;
     text-align: center;
     margin-top: 20vh;
-    animation: fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 2.3s ease-out forwards;
   }
   @keyframes fadeInUp {
     from {
