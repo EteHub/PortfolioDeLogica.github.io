@@ -5,7 +5,6 @@ import Navbar from "../components/NavBar.astro";
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="preload" href="/w5.jpg" as="image" />
     <link
       rel="preload"
       href="/Fonts/Montserrat-Regular.ttf"
@@ -49,15 +48,13 @@ import Navbar from "../components/NavBar.astro";
   body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-image: url("/w5.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+    background-color: #222121;
     min-height: 100vh;
+    color: white;
   }
   p {
+    text-shadow: 0 0 20px rgb(0, 0, 0);
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     color: #e0e0e0;
@@ -67,14 +64,15 @@ import Navbar from "../components/NavBar.astro";
     animation: fadeInUp 2s ease-out forwards;
   }
   h1 {
+    font-family: "Montserrat";
+    text-shadow: 0 0 20px rgb(0, 0, 0);
     font-weight: 300;
     position: absolute;
     top: -5%;
     width: 100%;
     /*background: rgba(199, 18, 18, 0.5);*/
     font-size: 3rem;
-    font-family: "Montserrat";
-    color: #ab2ef3;
+    color: #ec3b3b;
     text-align: center;
     margin-top: 20vh;
     animation: fadeInUp 1s ease-out forwards;

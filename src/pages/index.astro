@@ -6,7 +6,6 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
 
 <html lang="en">
   <head>
-    <link rel="preload" href="/w5.jpg" as="image" />
     <link
       rel="preload"
       href="/Fonts/Montserrat-Regular.ttf"
@@ -48,15 +47,13 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
   body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-image: url("/w5.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+    background-color: #222121;
     min-height: 100vh;
+    color: white;
   }
   h3 {
+    text-shadow: 0 0 20px rgb(0, 0, 0);
     color: #e0e0e0;
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -121,9 +118,10 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
     }
   }
   h2 {
+    text-shadow: 0 0 20px rgb(0, 0, 0);
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
-    color: #ae3bc5;
+    color: #ec3b3b;
 
     text-align: center;
     margin-top: 20vh;

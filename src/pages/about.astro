@@ -6,7 +6,6 @@ import CentralPopUp from "../components/CentralPopUp.astro";
 <script></script>
 <html lang="en">
   <head>
-    <link rel="preload" href="/w5.jpg" as="image" />
     <meta charset="UTF-8" />
     <link
       rel="preload"
@@ -84,7 +83,7 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       <div data-member="5" class="card">
         <div class="member-photo">
           <img
-            src="/icon5.jpeg"
+            src="/icon8.jpeg"
             alt="Preview del trabajo"
             style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"
           />
@@ -132,19 +131,14 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
       font-weight: 200; /* Normal */
       font-style: normal;
-      font-display: swap;
+      font-display: auto;
     }
     html,
     body {
       margin: 0;
       padding: 0;
       font-family: "Montserrat", sans-serif;
-      background-color: #0b0b0b;
-      background-image: url("/w5.jpg");
-      background-size: cover;
-      background-position: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-color: #222121;
       min-height: 100vh;
       color: white;
     }
@@ -170,7 +164,7 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       right: 10px;
       transition: all 0.3s ease;
       &:hover {
-        color: #b629a3;
+        color: #ec3b3b;
         cursor: pointer;
       }
     }
@@ -226,7 +220,7 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 20px rgb(14, 14, 14);
     }
 
     .info-section {
@@ -253,22 +247,23 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       width: 200px;
       height: 15rem;
       text-align: center;
-      box-shadow: 0 8px 32px rgba(19, 19, 19, 0.66);
+      box-shadow: 0 0 20px rgb(0, 0, 0);
       transition: all 0.3s ease;
       &:hover {
         background-color: rgba(255, 255, 255, 0.164);
         /*box-shadow: 0 0 13px #ab2ef37e; */
         transform: translateY(-5px);
         transition: all 0.3s ease;
-        color: #ab2ef3;
+        color: #ec3b3b;
         text-shadow: 0 0 5px #000000;
         font-weight: 500;
         cursor: pointer;
       }
     }
     h1 {
+      text-shadow: 0 0 20px rgb(0, 0, 0);
       animation: fadeInUp 1s ease-out forwards;
-      color: #ab2ef3;
+      color: #ec3b3b;
       font-weight: 300;
       font-size: 3.5rem;
     }
