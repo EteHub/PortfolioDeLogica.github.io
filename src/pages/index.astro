@@ -25,6 +25,11 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
     <NavBar />
     <CentralPopUp />
     <h2>Fundamentos y estructura del razonamiento formal.</h2>
+    <h3>
+      Bienvenidos a este entorno académico dedicado al estudio y difusión de la
+      lógica formal como pilar fundamental del análisis racional y el desarrollo
+      del pensamiento computacional
+    </h3>
     <div class="index-cards-container">
       <!-- <QuienesSomosCard /> -->
     </div>
@@ -50,6 +55,14 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+  }
+  h3 {
+    color: #e0e0e0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    animation: fadeInUp 2s ease-out forwards;
   }
   .index-cards-container {
     display: flex;
