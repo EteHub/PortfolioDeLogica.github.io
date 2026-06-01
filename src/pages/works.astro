@@ -21,6 +21,16 @@ import NavBar from "../components/NavBar.astro";
     });
   });
   */
+  function openLinks(event: any, url1: string, url2: string) {
+    // Evitamos el comportamiento por defecto del link
+    event.preventDefault();
+
+    // Abre el primer enlace (el que estaba en el href)
+    window.open(url1, "_blank");
+
+    // Abre el segundo enlace
+    window.open(url2, "_blank");
+  }
 </script>
 <html lang="en">
   <head>
@@ -67,9 +77,11 @@ import NavBar from "../components/NavBar.astro";
     
 
     <!-- Modal para el grupo 2 -->
-    <h1 class="centered">Interesado en nuestros trabajos?</h1>
+    <h1 class="centered">¿ cómo estructuramos el conocimiento lógico ?</h1>
     <p class="centered">
-      Acá podras encontrar informacion sobre nuestros trabajos, proyectos, etc
+      En esta área se puede acceder al despliegue modular de las evidencias
+      académicas y los recursos didácticos desarrollados por los equipos de
+      investigación durante este ciclo
     </p>
     <div class="submodule-card">
       <h2>Modulo I: INTRODUCCIÓN A LA LÓGICA</h2>
@@ -315,6 +327,231 @@ import NavBar from "../components/NavBar.astro";
         requerido en la programación lógica, la inteligencia artificial basada
         en reglas y la consistencia en el diseño de software.
       </p>
+      <div class="works-cointainer">
+        <div class="work-card">
+          <h1>Grupo 1 : Reducción al absurdo y separación de casos</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico1-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Demostración de las técnicas de derivación indirecta y análisis por
+            casos, detallando cómo estas estrategias lógicas permiten validar
+            argumentos complejos mediante la contradicción y la evaluación de
+            alternativas.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1xCsvN4XKwHHeo4n5hBifiyawdqDG9P-v/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>Grupo 2 : Sistema de Deducción natural</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico2-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Planteamiento formal de los sistemas de prueba basados en el
+            razonamiento intuitivo, analizando la estructura general de las
+            derivaciones matemáticas sin recurrir a matrices de verdad.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1NEyApB6-5fpqu9D2XHhpcQlFJxiMFXAg/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>Grupo 3 : Reglas de construcción de una deducción</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico3-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Desarrollo de los pasos y directrices estructurales requeridas para
+            edificar una demostración lógica válida, garantizando la
+            consistencia secuencial desde las premisas hasta la conclusión.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1-waIRQGgEndC1uAOm0I4_hY5X2ig-rLJ/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>Grupo 4 : Reglas de inferencia básicas</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico4-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Explicación de los principios primitivos de introducción y
+            eliminación de conectores elementales, los cuales sirven como las
+            instrucciones fundamentales en los procesos de derivación.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1RcBwhvsTL_L7YAfdtYMizF3TlOtBvTia/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>
+            Grupo 5 : Fundadores y relatores del sistema de deducción natural
+          </h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico5-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Exposición del origen y desarrollo cronológico de este sistema
+            formal, destacando los aportes de lógicos clave (como Gentzen,
+            Jaśkowski y Fitch) en la estructuración del razonamiento moderno.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1-q1Ke4mcmEUTo94PccJSWYrOiknXzHea/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1RHbU8q1JnlAtkz4dBtBkZe_UvCCT1Wp_MGJ4OXMNybo/edit?usp=drivesdk "
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Trabajo
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>Grupo 6 : Cuantificadores</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico6-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Análisis de los operadores existenciales y universales, examinando
+            cómo permiten delimitar el alcance de las variables dentro de las
+            proposiciones abiertas.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1yv4C6NkymGtq_-JLrInGlz0itTiFgk_v/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>Grupo 7 : Enunciados categóricos</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico7-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Clasificación de las proposiciones tradicionales según su cantidad y
+            cualidad, estudiando sus relaciones de oposición y su relevancia en
+            las bases de la lógica de predicados.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1zvuguIboGrpPoNSriZbUNQMJC8pjlJr8/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+        <div class="work-card">
+          <h1>Grupo 8 : Lógica de Predicados y Alcance del Cuantificador</h1>
+          <div class="work-card-photo-slot">
+            <img
+              src="/diptico8-3.jpeg"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+          <p>
+            Sistematización de las reglas avanzadas para variables
+            cuantificadas, definiendo con rigor los límites de validez y la
+            correcta especificación u operación de los componentes dentro de una
+            fórmula del primer orden.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1-vCwZOS-k4s9nZK17goSqW4rjJKw1FZL/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Documentos
+          </a>
+        </div>
+      </div>
     </div>
   </body>
   <style>
@@ -435,6 +672,7 @@ import NavBar from "../components/NavBar.astro";
       border-radius: 5px;
       cursor: pointer;
       margin-top: auto;
+      margin-bottom: 10px;
       display: flex;
       align-items: center; /* Alinea verticalmente */
       justify-content: center; /* Alinea horizontalmente */
@@ -468,7 +706,7 @@ import NavBar from "../components/NavBar.astro";
     }
     .work-card-photo-slot {
       width: 100%;
-      height: 180px;
+      height: 230px;
       background: rgba(255, 255, 255, 0.068);
       border-radius: 8px;
       margin-bottom: 10px;
@@ -501,7 +739,7 @@ import NavBar from "../components/NavBar.astro";
       color: #e0e0e0;
       font-weight: 300;
       width: 18rem;
-      height: 400px;
+      height: 550px;
       box-shadow: 0 0 10px rgb(0, 0, 0);
       cursor: pointer;
       display: flex;

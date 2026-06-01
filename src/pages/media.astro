@@ -15,30 +15,226 @@ import Navbar from "../components/NavBar.astro";
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="/logic.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Mediateca - Portfolio Lógica</title>
   </head>
   <body>
     <Navbar />
+    <h1>Referencias Bibliográficas y Fuentes de Investigación</h1>
+    <p>
+      Es un espacio de acceso rápido diseñado para la consulta de materiales
+      didácticos y el reforzamiento técnico de los temas de lógica.
+    </p>
+    <div class="modules-holder">
+      <div class="module">
+        <h1>Módulo I</h1>
+        <div class="img-slot">
+          <img
+            src="/recurso1.jpeg"
+            alt="Preview del trabajo"
+            style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+          />
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1Mlrzhxt7RzmeskFChS7fPiYlEXriqMz-/view?usp=drivesdkg"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="show-btn-mdl"
+        >
+          Abrir Recurso
+        </a>
+      </div>
+      <div class="module">
+        <h1>Módulo II</h1>
+        <div class="img-slot">
+          <img
+            src="/recurso2.jpeg"
+            alt="Preview del trabajo"
+            style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+          />
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1LYl88vAyKxBy0KmL9Z0nH7Xnw__AZ4ve/view?usp=drivesdk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="show-btn-mdl"
+        >
+          Abrir Recurso
+        </a>
+      </div>
+      <div class="module">
+        <h1>Módulo III</h1>
+        <div class="img-slot">
+          <img
+            src="/recurso3.jpeg"
+            alt="Preview del trabajo"
+            style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+          />
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1V0gwLwKmNX6LxL7MpxIsEiPT6wdk8vZY/view?usp=drivesdk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="show-btn-mdl"
+        >
+          Abrir Recurso
+        </a>
+      </div>
+    </div>
   </body>
+  <style>
+    @font-face {
+      font-family: "Montserrat";
+      src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
+      font-weight: 200; /* Normal */
+      font-style: thin;
+      font-display: swap;
+    }
+    .module {
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.281);
+      width: 300px;
+      height: 200px;
+      background: rgba(90, 90, 90, 0.26);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: top;
+      flex-direction: column;
+      color: #e0e0e0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      margin: 10px;
+      height: 500px;
+    }
+    .img-slot {
+      width: 80%;
+      height: 60%;
+      background: rgba(185, 183, 183, 0.068);
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .modules-holder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .module h1 {
+      margin: 20px 0;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-image: url("/w5.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+    h1 {
+      animation: fadeInUp 1s ease-out forwards;
+      font-family: "Montserrat", sans-serif;
+      color: #ab2ef3;
+      font-weight: 300;
+      font-size: 3.5rem;
+      margin: 70px auto;
+      text-align: center;
+    }
+    p {
+      color: #e0e0e0;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      width: 60%;
+      margin: -40px auto;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .show-btn-mdl {
+      text-decoration: none;
+      font-family: "Google Sans", sans-serif;
+      font-size: 1rem;
+      width: 80%;
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(172, 172, 172, 0.404);
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: auto;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center; /* Alinea verticalmente */
+      justify-content: center; /* Alinea horizontalmente */
+      gap: 8px;
+      &:hover {
+        background: rgb(160, 43, 140);
+        border: none;
+        color: #ffffff;
+        transition: all 0.3s ease;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @media (max-width: 900px) {
+      h1 {
+        width: 95%;
+        font-size: 2.5rem;
+        margin: 40px auto 20px auto;
+      }
+      p {
+        width: 90%;
+        font-size: 1.1rem;
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 750px) {
+      h1 {
+        position: relative;
+        width: 90%;
+        left: 0;
+        font-size: 2rem;
+        margin: 40px auto 20px auto;
+      }
+      p {
+        position: relative;
+        width: 90%;
+        left: 0;
+        margin: 0 auto 30px auto;
+        font-size: 1rem;
+      }
+      .modules-holder {
+        position: relative;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        top: 0;
+      }
+      .module {
+        width: 90%;
+        max-width: 320px;
+        height: auto;
+        min-height: 450px;
+        margin: 10px auto;
+      }
+      .module h1 {
+        font-size: 1.5rem;
+      }
+      .img-slot {
+        height: 300px;
+        width: 90%;
+      }
+    }
+  </style>
 </html>
-<style>
-  @font-face {
-    font-family: "Montserrat";
-    src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
-    font-weight: 200; /* Normal */
-    font-style: thin;
-    font-display: swap;
-  }
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-image: url("/w5.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-  }
-</style>
