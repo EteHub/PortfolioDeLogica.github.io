@@ -1,24 +1,72 @@
 ---
-import  NavBar  from "../components/NavBar.astro";
+import NavBar from "../components/NavBar.astro";
 ---
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <NavBar/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/logic.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Experiencia - Portfolio Lógica</title>
+  </head>
+  <body>
+    <NavBar />
     <section class="section1">
-        <h1>
-            Sobre nuestra experiencia
-        </h1>
+      <h1>Experiencia</h1>
+      <h3>Historias en video que muestran proyectos, prácticas y aprendizajes del equipo.</h3>
+      <div class="cards-holder">
+        <div class="module">
+          <h2>Charlas de equipo</h2>
+          <div class="img-slot">
+            <img src="/video-wallpaper-1.png" alt="Vista previa del video" />
+          </div>
+          <p>Reflexiones en video sobre los procesos y resultados de nuestro trabajo colaborativo.</p>
+          <a
+            href="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            Ver Video
+          </a>
+        </div>
+        <div class="module">
+          <h2>Prácticas en acción</h2>
+          <div class="img-slot">
+            <img src="/fondo-prueba.jfif" alt="Vista previa del video" />
+          </div>
+          <p>Demostraciones en video de actividades, ejercicios y casos de estudio reales.</p>
+          <a
+            href="https://www.youtube.com/watch?v=9bZkp7q19f0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            Ver Video
+          </a>
+        </div>
+        <div class="module">
+          <h2>Presentación final</h2>
+          <div class="img-slot">
+            <img src="/fondo-prueba.jfif" alt="Vista previa del video" />
+          </div>
+          <p>Presentación en video del cierre del proyecto con conclusiones y aprendizajes clave.</p>
+          <a
+            href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            Ver Video
+          </a>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
   @font-face {
     font-family: "Montserrat";
     src: url("/Fonts/Montserrat-Regular.ttf") format("truetype");
@@ -26,37 +74,169 @@ import  NavBar  from "../components/NavBar.astro";
     font-style: thin;
     font-display: swap;
   }
+
   html,
   body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    background-color: #021A26;
+    background-color: #021a26;
     min-height: 100vh;
     color: white;
-    background-image: url("/fondo-prueba.jfif"); /* Reemplaza con el nombre de tu archivo */
+    background-image: url("/fondo-prueba.jfif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  .section1 {
+    text-align: center;
+    padding: 40px 20px 80px;
+    backdrop-filter: brightness(0.85);
+  }
+
+  h1 {
+    color: #78aba4;
+    font-family: "Montserrat", "Courier New";
+    font-size: 3.2rem;
+    font-weight: 300;
+    text-shadow: 0 10px 30px #000;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
   h3 {
-    text-shadow: 0 0 20px rgb(0, 0, 0);
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
     color: #e0e0e0;
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    width: 60%;
-    margin: 20px auto;
-    animation: fadeInUp 2s ease-out forwards;
+    width: 75%;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    animation: fadeInUp 1.2s ease-out forwards;
   }
-  h1 {
-        color: #78ABA4;
-        font-family: "Montserrat", "Courier New";
-        font-size: 40px;
-        font-weight: 300;
-        text-shadow: 0 10px 30px #000;
+
+  .cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  .section1 {
+
+  .module {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.32);
+    width: 320px;
+    min-height: 520px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0e0e0;
+    font-family: "Montserrat", sans-serif;
+    padding: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .module:hover {
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .module h2 {
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+    font-size: 1.4rem;
+    margin: 0 0 18px;
     text-align: center;
+  }
+
+  .img-slot {
+    width: 100%;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+
+  .img-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .module p {
+    flex: 1;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  .show-btn-mdl {
+    text-decoration: none;
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 260px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 12px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .show-btn-mdl:hover {
+    background: #ec3b3b;
+    border-color: transparent;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 980px) {
+    h1 {
+      font-size: 2.8rem;
+    }
+  }
+
+  @media (max-width: 760px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    h3 {
+      width: 90%;
+      font-size: 1rem;
+    }
+
+    .cards-holder {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .module {
+      width: 90%;
+      min-height: auto;
+    }
   }
 </style>
