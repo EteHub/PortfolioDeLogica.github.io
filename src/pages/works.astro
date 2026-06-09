@@ -78,15 +78,12 @@ import NavBar from "../components/NavBar.astro";
     <!-- Modal para el grupo 2 -->
     <h1 class="centered">¿Cómo estructuramos el conocimiento lógico ?</h1>
     <p class="centered">
-      En esta área se puede acceder al despliegue modular de las evidencias
-      académicas y los recursos didácticos desarrollados por los equipos de
-      investigación durante este ciclo
+      En esta área se puede acceder al despliegue modular de las evidencias académicas y los recursos didácticos desarrollados por los equipos de investigación durante este ciclo de estudio.
     </p>
     <div class="submodule-card">
       <h2>Modulo I: INTRODUCCIÓN A LA LÓGICA</h2>
       <p>
-        Comprende el estudio analítico de los sistemas formales e informales del
-        razonamiento, estructurado en los siguientes núcleos temáticos:
+        Comprende el estudio analítico de los sistemas formales e informales del razonamiento. Se llevó a cabo mediante exposiciones y recursos didácticos basados en los siguientes núcleos temáticos:
       </p>
       <div class="works-cointainer">
         <div class="work-card">
@@ -101,7 +98,7 @@ import NavBar from "../components/NavBar.astro";
           <p>
             Introducción conceptual a la lógica y sus principios básicos,
             destacando su importancia fundamental en la ingeniería informática
-            para el diseño de algoritmos y la programación
+            para el diseño de algoritmos y la programación.
           </p>
           <a
             href="https://drive.google.com/file/d/1Whk0Tw8IuNqw2--qT1QyPp-OuXNq0tDD/view"
@@ -222,6 +219,17 @@ import NavBar from "../components/NavBar.astro";
             >
             Ver Documentos
           </a>
+                    <a
+            href="https://docs.google.com/document/d/18cRXOCNLMB-uVHfjF14Fj1VkOqCPKZdw/edit?usp=drivesdk&ouid=105957395525939597694&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Ver Trabajo
+          </a>
         </div>
         <div class="work-card">
           <h1>Grupo 6 : Lógica informal</h1>
@@ -308,13 +316,26 @@ import NavBar from "../components/NavBar.astro";
     <div class="submodule-card">
       <h2>Modulo II: LÓGICA PROPOSICIONAL</h2>
       <p>
-        Desarrollo de las bases de la lógica proposicional mediante el estudio
-        de las variables proposicionales, la aplicación de los conectores
-        lógicos y la construcción de tablas de verdad. Este contenido provee las
-        herramientas formales necesarias para el diseño de circuitos digitales,
-        la estructuración de condiciones algorítmicas y la verificación
-        matemática de sistemas de información.
+        Se estudió el desarrollo de las bases de la lógica proposicional mediante el análisis de las variables proposicionales, la aplicación de los conectores lógicos y la construcción de tablas de verdad. Este contenido aportó las herramientas formales necesarias para el diseño de circuitos digitales, la estructuración de condiciones algorítmicas y la verificación matemática de sistemas de información. Por ello se evaluó mediante una resolución de ejercicios:
       </p>
+       <div class="work-card-photo-slot2">
+            <img
+              src="/trabajo-modulo2.png"
+              alt="Preview del trabajo"
+              style="width: 100%; height: 100%; object-fit: fit; border-radius: 8px;"
+            />
+          </div>
+      <a
+            href="https://drive.google.com/file/d/1q6sV-EuIF1XBtJuEPu45LR7-3xUOpHLs/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="show-btn-mdl ok"
+          >
+            <span class="material-symbols-outlined centered-button-content"
+              >visibility</span
+            >
+            Resolución de ejercicios
+        </a>
     </div>
     <div class="submodule-card">
       <h2>Módulo III: SISTEMA DE DEDUCCIÓN NATURAL Y LÓGICA DEPREDICADOS</h2>
@@ -587,6 +608,9 @@ import NavBar from "../components/NavBar.astro";
     .modal-grupo-trabajos h1 {
       font-size: 1.8rem;
     }
+    .ok {
+      margin: 0 auto;
+    }
     .hidden {
       display: none !important;
     }
@@ -711,11 +735,21 @@ import NavBar from "../components/NavBar.astro";
       box-shadow: 0 0 10px rgb(0, 0, 0);
       flex-shrink: 0;
     }
+     .work-card-photo-slot2 {
+      margin: 0 auto;
+      width: 50%;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.068);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgb(0, 0, 0);
+      flex-shrink: 0;
+    }
     h1 {
       
       animation: fadeInUp 1s ease-out forwards;
       font-weight: 700;
-      font-size: 3.5rem;
+      font-size: 3.2rem;
     }
     p {
       animation: fadeInUp 1s ease-out forwards;
@@ -752,7 +786,6 @@ import NavBar from "../components/NavBar.astro";
       padding: 20px;
       margin: 20px auto;
       max-width: 90%;
-      backdrop-filter: blur(10px);
       box-shadow: 0 0 10px rgb(0, 0, 0);
       text-align: center;
     }
