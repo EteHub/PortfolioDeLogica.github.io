@@ -64,12 +64,12 @@ Aquí tienes la lista de tareas organizada para que puedas gestionar las modific
 
 
 * [x] Incluir enlace: [Resolución de ejercicios](https://drive.google.com/file/d/1q6sV-EuIF1XBtJuEPu45LR7-3xUOpHLs/view?usp=drivesdk).
-* [ ] Incorporar vista previa (capture) de los ejercicios.
+* [x] Incorporar vista previa (capture) de los ejercicios.
 
 
-* [ ] **Módulo III:** Actualizar título y texto:
-* [ ] Título: **Módulo III: SISTEMA DE DEDUCCIÓN NATURAL** (Sin mencionar "lógica de predicados").
-* [ ] Texto: "Abarcó el estudio sistemático de las técnicas de deducción paso a paso y la evolución de sus sistemas matemáticos, integrando el análisis de enunciados categóricos y el alcance de los cuantificadores lógicos; esto se demostró mediante las explicaciones de cada grupo y el desarrollo de una infografía. Su dominio es indispensable para desarrollar el pensamiento lógico-formal requerido en la programación lógica, la inteligencia artificial basada en reglas y la consistencia en el diseño de software."
+* [x] **Módulo III:** Actualizar título y texto:
+* [x] Título: **Módulo III: SISTEMA DE DEDUCCIÓN NATURAL** (Sin mencionar "lógica de predicados").
+* [x] Texto: "Abarcó el estudio sistemático de las técnicas de deducción paso a paso y la evolución de sus sistemas matemáticos, integrando el análisis de enunciados categóricos y el alcance de los cuantificadores lógicos; esto se demostró mediante las explicaciones de cada grupo y el desarrollo de una infografía. Su dominio es indispensable para desarrollar el pensamiento lógico-formal requerido en la programación lógica, la inteligencia artificial basada en reglas y la consistencia en el diseño de software."
 
 
 * [ ] **Módulo IV:** Actualizar texto:
