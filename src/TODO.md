@@ -20,15 +20,15 @@ Aquí tienes la lista de tareas organizada para que puedas gestionar las modific
 
 #### 🔍 Sección: Visión
 
-* [ ] **Corrección de redacción:** Agregar el punto y seguido faltante y actualizar el contenido:
+* [x] **Corrección de redacción:** Agregar el punto y seguido faltante y actualizar el contenido:
 > "Este espacio ha sido estructurado con el propósito de compilar y presentar las investigaciones, análisis prácticos y recursos didácticos desarrollados a lo largo del período académico en el subproyecto de Lógica. A través de un despliegue modular, los usuarios podrán acceder a recursos técnicos, detallados e informativos que abarcan desde los fundamentos de la lógica hasta las estructuras complejas de la deducción. De esta manera, no solo se consolida el desarrollo teórico-práctico de nuestro equipo, sino que funciona como un nodo centralizado que agrupa las evidencias didácticas elaboradas en colaboración con los demás grupos académicos de este ciclo de investigación. El objetivo es ofrecer una guía de consulta completa y accesible de herramientas de aprendizaje."
 
 
 
 #### 👥 Sección: ¿Quiénes somos?
 
-* [ ] **Actualización de identidad:** - [ ] Primer párrafo: "Pertenecemos a un grupo de estudiantes de Ingeniería en informática de la UNIVERSIDAD NACIONAL EXPERIMENTAL DE LOS LLANOS OCCIDENTALES 'EZEQUIEL ZAMORA' (UNELLEZ)".
-* [ ] Segundo párrafo (diseño tipo lista con botones):
+* [x] **Actualización de identidad:** - [ ] Primer párrafo: "Pertenecemos a un grupo de estudiantes de Ingeniería en informática de la UNIVERSIDAD NACIONAL EXPERIMENTAL DE LOS LLANOS OCCIDENTALES 'EZEQUIEL ZAMORA' (UNELLEZ)".
+* [x] Segundo párrafo (diseño tipo lista con botones):
 * 🎓 Cursantes de:
 * Primer Semestre
 * Sección D01
@@ -42,34 +42,34 @@ Aquí tienes la lista de tareas organizada para que puedas gestionar las modific
 
 #### 🚀 Sección: Proyectos
 
-* [ ] **Corrección técnica:** Eliminar el espacio innecesario antes del último signo de interrogación.
-* [ ] **Actualización de texto:**
+* [x] **Corrección técnica:** Eliminar el espacio innecesario antes del último signo de interrogación.
+* [x] **Actualización de texto:**
 > "En esta área se puede acceder al despliegue modular de las evidencias académicas y los recursos didácticos desarrollados por los equipos de investigación durante este ciclo de estudio."
 
 
-* [ ] **Corrección Grupo 1:** Agregar el punto final (.) al párrafo correspondiente.
+* [x] **Corrección Grupo 1:** Agregar el punto final (.) al párrafo correspondiente.
 
 #### 📚 Módulos Académicos
 
-* [ ] **Módulo I:** Actualizar texto:
+* [x] **Módulo I:** Actualizar texto:
 > "Comprende el estudio analítico de los sistemas formales e informales del razonamiento. Se llevó a cabo mediante exposiciones y recursos didácticos basados en los siguientes núcleos temáticos:"
 
 
-* [ ] Agregar enlace: [Trabajo de Validez y Verdad](https://docs.google.com/document/d/18cRXOCNLMB-uVHfjF14Fj1VkOqCPKZdw/edit?usp=drivesdk&ouid=105957395525939597694&rtpof=true&sd=true).
-* [ ] Resubir el archivo: [Díptico](https://drive.google.com/file/d/1dCgWZ5xF9W7xKY4GR7YOJzShRHFzWp6K/view?usp=drivesdk).
+* [x] Agregar enlace: [Trabajo de Validez y Verdad](https://docs.google.com/document/d/18cRXOCNLMB-uVHfjF14Fj1VkOqCPKZdw/edit?usp=drivesdk&ouid=105957395525939597694&rtpof=true&sd=true).
+* [x] Resubir el archivo: [Díptico](https://drive.google.com/file/d/1dCgWZ5xF9W7xKY4GR7YOJzShRHFzWp6K/view?usp=drivesdk).
 
 
-* [ ] **Módulo II:** Actualizar texto:
+* [x] **Módulo II:** Actualizar texto:
 > "Se estudió el desarrollo de las bases de la lógica proposicional mediante el análisis de las variables proposicionales, la aplicación de los conectores lógicos y la construcción de tablas de verdad. Este contenido aportó las herramientas formales necesarias para el diseño de circuitos digitales, la estructuración de condiciones algorítmicas y la verificación matemática de sistemas de información. Por ello se evaluó mediante una resolución de ejercicios:"
 
 
-* [ ] Incluir enlace: [Resolución de ejercicios](https://drive.google.com/file/d/1q6sV-EuIF1XBtJuEPu45LR7-3xUOpHLs/view?usp=drivesdk).
-* [ ] Incorporar vista previa (capture) de los ejercicios.
+* [x] Incluir enlace: [Resolución de ejercicios](https://drive.google.com/file/d/1q6sV-EuIF1XBtJuEPu45LR7-3xUOpHLs/view?usp=drivesdk).
+* [x] Incorporar vista previa (capture) de los ejercicios.
 
 
-* [ ] **Módulo III:** Actualizar título y texto:
-* [ ] Título: **Módulo III: SISTEMA DE DEDUCCIÓN NATURAL** (Sin mencionar "lógica de predicados").
-* [ ] Texto: "Abarcó el estudio sistemático de las técnicas de deducción paso a paso y la evolución de sus sistemas matemáticos, integrando el análisis de enunciados categóricos y el alcance de los cuantificadores lógicos; esto se demostró mediante las explicaciones de cada grupo y el desarrollo de una infografía. Su dominio es indispensable para desarrollar el pensamiento lógico-formal requerido en la programación lógica, la inteligencia artificial basada en reglas y la consistencia en el diseño de software."
+* [x] **Módulo III:** Actualizar título y texto:
+* [x] Título: **Módulo III: SISTEMA DE DEDUCCIÓN NATURAL** (Sin mencionar "lógica de predicados").
+* [x] Texto: "Abarcó el estudio sistemático de las técnicas de deducción paso a paso y la evolución de sus sistemas matemáticos, integrando el análisis de enunciados categóricos y el alcance de los cuantificadores lógicos; esto se demostró mediante las explicaciones de cada grupo y el desarrollo de una infografía. Su dominio es indispensable para desarrollar el pensamiento lógico-formal requerido en la programación lógica, la inteligencia artificial basada en reglas y la consistencia en el diseño de software."
 
 
 * [ ] **Módulo IV:** Actualizar texto:

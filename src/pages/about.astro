@@ -36,8 +36,11 @@ import CentralPopUp from "../components/CentralPopUp.astro";
     </div>
 
     <section class="info-section">
-      <h1>Estudiantes de ingeniería en informática</h1>
-      <p>Primer semestre, Sección D01, Grupo 5</p>
+      <h1>Pertenecemos a un grupo de estudiantes de Ingeniería en informática de la UNIVERSIDAD NACIONAL EXPERIMENTAL DE LOS LLANOS OCCIDENTALES 'EZEQUIEL ZAMORA' (UNELLEZ)</h1>
+      <p>🎓 Cursantes de:</p>
+      <p>Primer Semestre</p>
+      <p>Sección D01</p>
+      <p> Grupo de investigación N° 5</p>
     </section>
     <section class="members-cards">
       <div data-member="1" class="card" onclick="">
@@ -243,8 +246,6 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       margin: 20px auto;
     }
     .card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
       border-radius: 15px;
       padding: 20px;
       width: 200px;
@@ -253,7 +254,6 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       box-shadow: 0 8px 32px rgba(19, 19, 19, 0.66);
       transition: all 0.3s ease;
       &:hover {
-        background-color: rgba(255, 255, 255, 0.164);
         /*box-shadow: 0 0 13px #ab2ef37e; */
         transform: translateY(-5px);
         transition: all 0.3s ease;
@@ -264,7 +264,7 @@ import CentralPopUp from "../components/CentralPopUp.astro";
     }
     h1 {
       animation: fadeInUp 1s ease-out forwards;
-      font-size: 3.5rem;
+      font-size: 1.5rem;
       font-weight: 800;
     }
     p {
@@ -285,7 +285,8 @@ import CentralPopUp from "../components/CentralPopUp.astro";
       }
 
       h1 {
-        font-size: 1.8rem;
+        margin: 20px;
+        font-size: 1rem;
       }
       .info-section {
         width: 95%;
