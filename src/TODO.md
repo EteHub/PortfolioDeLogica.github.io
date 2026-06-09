@@ -72,5 +72,5 @@ Aquí tienes la lista de tareas organizada para que puedas gestionar las modific
 * [x] Texto: "Abarcó el estudio sistemático de las técnicas de deducción paso a paso y la evolución de sus sistemas matemáticos, integrando el análisis de enunciados categóricos y el alcance de los cuantificadores lógicos; esto se demostró mediante las explicaciones de cada grupo y el desarrollo de una infografía. Su dominio es indispensable para desarrollar el pensamiento lógico-formal requerido en la programación lógica, la inteligencia artificial basada en reglas y la consistencia en el diseño de software."
 
 
-* [ ] **Módulo IV:** Actualizar texto:
+* [x] **Módulo IV:** Actualizar texto:
 > "Se centró en el análisis de la estructura interna de los enunciados mediante su descomposición en términos y predicados, utilizando cuantificadores para determinar la validez de los argumentos. La aplicación de este contenido se comprobó mediante el diseño de un repositorio digital, donde se utilizó este sistema lógico para clasificar, estructurar y publicar todos los proyectos de la materia en la web. Su dominio es indispensable para el desarrollo de bases de datos, la programación de condiciones en el software y la optimización de consultas en sistemas informáticos."
