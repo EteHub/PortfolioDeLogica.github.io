@@ -13,7 +13,7 @@ Aquí tienes la lista de tareas organizada para que puedas gestionar las modific
 
 #### 🏠 Sección: Home
 
-* [ ] **Modificar texto de bienvenida:**
+* [x] **Modificar texto de bienvenida:**
 > "Bienvenidos a este entorno académico dedicado al estudio y difusión de la lógica, como pilar fundamental del pensamiento crítico, la objetividad y el desarrollo del pensamiento computacional."
 
 
