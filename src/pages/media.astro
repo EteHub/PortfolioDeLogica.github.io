@@ -95,13 +95,11 @@ import Navbar from "../components/NavBar.astro";
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
       width: 300px;
       height: 200px;
-      background: rgba(90, 90, 90, 0.26);
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: top;
       flex-direction: column;
-      color: #e0e0e0;
       font-family: "Montserrat", sans-serif;
       font-size: 1.5rem;
       margin: 10px;
@@ -122,7 +120,6 @@ import Navbar from "../components/NavBar.astro";
       margin-top: 40px;
     }
     .module h1 {
-      text-shadow: 0 0 10px rgb(0, 0, 0);
       margin: 20px 0;
       font-size: 1.4rem;
       margin-bottom: 20px;
@@ -132,23 +129,21 @@ import Navbar from "../components/NavBar.astro";
       margin: 0;
       padding: 0;
       font-family: "Montserrat", sans-serif;
-      background-color: #222121;
       min-height: 100vh;
-      color: white;
+    background-image: url("/fondo-ok.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed
     }
     h1 {
-      text-shadow: 0 0 10px rgb(0, 0, 0);
       animation: fadeInUp 1s ease-out forwards;
-      font-family: "Montserrat", sans-serif;
-      color: #ec3b3b;
       font-weight: 300;
       font-size: 3.5rem;
       margin: 70px auto;
       text-align: center;
     }
     p {
-      text-shadow: 0 0 10px rgb(0, 0, 0);
-      color: #e0e0e0;
       font-family: "Montserrat", sans-serif;
       text-align: center;
       width: 60%;
@@ -161,10 +156,10 @@ import Navbar from "../components/NavBar.astro";
       font-size: 1rem;
       width: 80%;
       background: transparent;
-      color: white;
       border: 1px solid rgba(172, 172, 172, 0.404);
       padding: 10px 20px;
-      border-radius: 5px;
+      border-radius: 20px;
+      border: solid 2px rgba(0, 0, 0, 0.2);
       cursor: pointer;
       margin-top: auto;
       margin-bottom: 10px;
@@ -173,7 +168,7 @@ import Navbar from "../components/NavBar.astro";
       justify-content: center; /* Alinea horizontalmente */
       gap: 8px;
       &:hover {
-        background: #ec3b3b;
+        background: #024ef3;
         border: none;
         color: #ffffff;
         transition: all 0.3s ease;
