@@ -24,9 +24,12 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
     <NavBar />
     <CentralPopUp />
     <h2>Fundamentos y estructura del razonamiento formal.</h2>
-    <h3>
-     Bienvenidos a este entorno académico dedicado al estudio y difusión de la lógica, como pilar fundamental del pensamiento crítico, la objetividad y el desarrollo del pensamiento computacional.
+    <section class="flex-intro">
+      <h3>
+     "Bienvenidos a este entorno académico dedicado al estudio y difusión de la lógica, como pilar fundamental del pensamiento crítico, la objetividad y el desarrollo del pensamiento computacional.""
     </h3>
+    <img src="/intro-photo.jpeg" class="intro-photo">
+    </section>
     <div class="index-cards-container">
       <!-- <QuienesSomosCard /> -->
     </div>
@@ -53,6 +56,23 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed
+  }
+  .flex-intro {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .flex-intro h3 {
+    margin: 0 auto;
+    width: 500px;
+  }
+  .intro-photo {
+    margin: 0 auto;
+    width: 310px;
+    height: 310px;
   }
   h3 {
     color: #000000;
@@ -104,20 +124,6 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
       width: 100%;
     }
   }
-  @media (max-width: 785px) {
-    h2 {
-      font-size: 1.5rem;
-      padding: 0 20px;
-    }
-    .h3-container {
-      flex-direction: column; /* Apila en vertical si la pantalla es pequeña */
-      align-items: center;
-    }
-    h3 {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-  }
   h2 {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
@@ -125,13 +131,51 @@ import QuienesSomosCard from "../components/indexCardQuienesSomos.astro";
     text-align: center;
     margin-top: 20vh;
     animation: fadeInUp 2s ease-out forwards;
-  }
-  @media (max-width: 768px) {
+  } 
+  @media (max-width: 780px) {
+     .h3-container {
+      flex-direction: column; /* Apila en vertical si la pantalla es pequeña */
+      align-items: center;
+    }
+    h3 {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    h2 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 100%;
+    }
+    h3 {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      width: 100%;
+    }
     .bigtext {
       font-size: 1.2rem;
       width: 90%;
       padding: 0 10px;
       top: 76%;
+    }
+    .flex-intro {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 20px;
+      margin-top: 30px;
+    }
+    .intro-photo {
+      bottom: 0;
+      height: auto;
+      position: absolute;
+    }
+    .flex-intro h3 {
+      width: 80%;
+    }
+    .intro-photo {
+      width: 200px;
+      height: 120px;
     }
   }
 </style>
